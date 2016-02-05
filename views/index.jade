@@ -2,10 +2,22 @@ extends layout
 
 block content
   .peacockLogo
-    a(href='www.peacockweb.org')
+    a(href='#')
       img.profileLogo(src='/images/peacock.svg', height='40px')
+    nav
+      ol.navBar
+        li.dropdown
+          a(href='#', data-toggle='dropdown' class='dropdown-toggle') Kyle
+            b.caret
+        ul.dropdown-menu
+          li
+            a(href='/views/kyle/home.jade') Home
+          li
+            a(href='/views/kyle/projects.jade') Projects
+          li 
+            a(href='/views/kyle/resume.jade') Resume
+
 
     
-
-  h1 Peacockweb
-  p "making progress"
+script(src='javascripts/jquery-1.11.3.min.js', type='text/javascript')
+script(src='javascripts/bootstrap.js', type='text/javascript')
