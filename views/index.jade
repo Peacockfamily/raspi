@@ -7,6 +7,16 @@ block content
     nav
       ol.navBar
         li.dropdown
+          a(href='#', data-toggle='dropdown' class='dropdown-toggle') Gavin
+            b.caret
+        ul.dropdown-menu
+          li
+            a(href='#') Home
+          li
+            a(href='#') Projects
+          li 
+            a(href='#') Resume
+        li.dropdown
           a(href='#', data-toggle='dropdown' class='dropdown-toggle') Kyle
             b.caret
         ul.dropdown-menu
@@ -16,8 +26,47 @@ block content
             a(href='/views/kyle/projects.jade') Projects
           li 
             a(href='/views/kyle/resume.jade') Resume
+        li.dropdown
+          a(href='#', data-toggle='dropdown' class='dropdown-toggle') Andrew
+            b.caret
+        ul.dropdown-menu
+          li
+            a(href='#') Home
+          li
+            a(href='#') Projects
+          li 
+            a(href='#') Resume    
+  #carousel1(class='carousel slide', data-ride='carousel')
+    ol.carousel-indicators
+      li(data-target='#carousel1', data-slide-to='0', class='active')
+      li(data-target='#carousel1', data-slide-to='1', class='active')
+      li(data-target='#carousel1', data-slide-to='2', class='active')
+    .carousel-inner(role='listbox')
+      div(class='item active')
+        img.center-block(src='/images/Carousel_placeholder.png')
+        .carousel-caption
+          h3 Welcome to PeacockNet
+          p Learn what the programmers in our family are up to
+      .item
+        img.center-block(src='/images/Carousel_placeholder.png')
+        .carousel-caption
+          h3 Landing Page
+          p Follow links to view our personal branches
+      .item
+        img.center-block(src='/images/Carousel_placeholder.png')
+        .carousel-caption
+          h3 Third slide Heading
+          p Third slide Caption
+      a(class='left carousel-control', href='#carousel1' role='button', data-slide='prev')
+        span(class='glyphicon-chevron-left', aria-hidden='true')
+        span(class='sr-only') Previous
+      a(class='right carousel-control', href='#carousel1' role='button', data-slide='next')
+        span(class='glyphicon-chevron-right', aria-hidden='true')
+        span(class='sr-only') Next
+
+
+
+
 
 
     
-script(src='javascripts/jquery-1.11.3.min.js', type='text/javascript')
-script(src='javascripts/bootstrap.js', type='text/javascript')
